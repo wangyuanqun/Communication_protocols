@@ -34,9 +34,9 @@ Error correction is not always in layer 2 data link, but also in layer 4(transpo
 
 If transport layer does error correction, what is the point of doing it at layer 2?(**Exam**)
 
-It is about time. 
+It is about time. If we can find errors at physical layer then they can be fixed quickly as they are just over one hop with a limited distance to travel, the error will be found in microseconds to milliseconds. And for layer 4, which operates end to end, the recovery time will be much longer, because the round trip time may be longer than 1 second in some cases such as satellite links and many-hop paths.
 
-Firstly, if the error happens at physical layer
+And the retransmission mechanism at layer 4 is dealing with congestion induced packet loss, it thinks the packet loss is due to congestion rather than physical errors.
 
 
 
